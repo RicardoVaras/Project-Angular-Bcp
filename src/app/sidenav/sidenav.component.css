@@ -1,0 +1,23 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.title{
+  background-color: #60c7b2;
+  padding-left: 35%;
+}
+
+.ico{
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
