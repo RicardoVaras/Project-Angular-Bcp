@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AddComponent } from './client/add/add.component';
+import { TransactionTemplateComponent } from './transaction/template/template.component';
 
 const routes: Routes = [
   {
-    path:'client',
-    component:AddComponent
-  }
+    path: 'transacciones',
+    component: TransactionTemplateComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

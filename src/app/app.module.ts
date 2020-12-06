@@ -11,13 +11,21 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { AddComponent } from './client/add/add.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { TransactionTemplateComponent } from './transaction/template/template.component';
+import { TransactionAddComponent } from './transaction/add/add.component';
+import { TransactionAccountComponent } from './transaction/account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    AddComponent
+    TransactionAccountComponent,
+    TransactionAddComponent,
+    TransactionTemplateComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,9 +36,13 @@ import { AddComponent } from './client/add/add.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatCardModule,
+    MatInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
