@@ -5,6 +5,8 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar class="title">BCP</mat-toolbar>
     <mat-nav-list>
+      <a mat-list-item [routerLink]="['listar']">Clientes</a>
+      <a mat-list-item [routerLink]="['listar-Cuenta-Bancaria']">Cuentas Bancarias</a>
       <a mat-list-item [routerLink]="['transacciones']">Transacciones</a>
     </mat-nav-list>
   </mat-sidenav>

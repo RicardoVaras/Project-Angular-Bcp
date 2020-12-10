@@ -1,19 +1,15 @@
-.transaction-template {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .transaction-card {
-  width: 500px;
+  width: 300px;
   display: flex;
   justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
-.transaction-form {
-  display: grid;
-  grid-template-rows: 70px 1fr;
-  align-items: center;
+h3{
+  margin-left: 5%;
+  font-size: 20px;
+  padding-top: 15px;
 }
+
+

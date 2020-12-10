@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="card">
+        <div class="centered">
+            <h3>Cuenta Bancaria</h3>
+        </div>
+        <table class="highlight centered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Numero de Cuenta</th>
+                <th>Tipo de Cuenta</th>
+                <th>Estado</th>
+                <th>Moneda</th>
+                <th>Fecha de Apertura</th>
+                <th>Fecha Usada</th>
+                <th>Cliente</th>
+                <th>Operaciones</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr *ngFor="let cuentasbancaria of cuentasbancarias" class="text-center">
+                <td>{{cuentasbancaria.id}}</td>
+                <td>{{cuentasbancaria.numeroCuenta}}</td>
+                <td>{{cuentasbancaria.tipoCuenta.descripcion}}</td>
+                <td>{{cuentasbancaria.estatus.descripcion}}</td>
+                <td>{{cuentasbancaria.monedaCuenta.descripcion}}</td>
+                <td>{{cuentasbancaria.fechaApertura}}</td>
+                <td>{{cuentasbancaria.ultimaFechaUsada}}</td>
+                <td>{{cuentasbancaria.cliente.nombre}}</td>
+              <td>
+                <button class="btn yellow">Editar</button>
+              <button class="btn red">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
