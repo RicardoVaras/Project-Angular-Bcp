@@ -15,8 +15,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
-import { TransactionAddComponent } from './transaction/add/add.component';
-import { TransactionAccountComponent } from './transaction/account/account.component';
 import { ListarComponent } from './Cliente/listar/listar.component';
 import { AddComponent } from './Cliente/add/add.component';
 import { EditComponent } from './Cliente/edit/edit.component';
@@ -26,17 +24,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CuentaBancariaServiceService } from './Services/cuenta-bancaria-service.service';
 import { Listar } from './Cuenta-Bancaria/listar/listar.component';
 import { TransferenciasServiceService } from './Services/transferencias-service.service';
-import { TransactionTemplateComponent } from './transaction/template/template.component';
+import { ListarTransaccion } from './Transacciones/listar/listar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    TransactionAccountComponent,
-    TransactionAddComponent,
-    TransactionTemplateComponent,
     ListarComponent,
+    ListarTransaccion,
     AddComponent,
     EditComponent,
     Listar,

@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="card">
+        <div class="centered">
+            <h3>Lista de Transacción</h3>
+        </div>
+        <table class="highlight centered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Monto de la Transacción</th>
+                <th>Tipo de Transacción</th>
+                <th>N° de Cuenta</th>
+                <th>Opciones</th>
+              </tr>
+            </thead>
+          <tbody>
+            <tr *ngFor="let TranferenciaListar of TranferenciaLista" class="text-center">
+                <td>{{TranferenciaListar.id}}</td>
+                <td>{{TranferenciaListar.montodeTransaccion}}</td>
+                <td>{{TranferenciaListar.tipoTransaccion.descripcion}}</td>
+                <td>{{TranferenciaListar.cuentasBancarias.numeroCuenta}}</td>
+              <td>
+                <button class="btn yellow">Editar</button>
+              <button class="btn red">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>

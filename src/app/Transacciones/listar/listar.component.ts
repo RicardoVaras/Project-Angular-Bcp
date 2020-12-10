@@ -5,11 +5,11 @@ import { TranferenciaListar } from 'src/app/Modelos/Transferencias-Listar';
 import { TransferenciasServiceService } from '../../Services/transferencias-service.service';
 
 @Component({
-  selector: 'app-transaction-template',
-  templateUrl: './template.component.html',
-  styleUrls: ['./template.component.css'],
+  selector: 'app-listar',
+  templateUrl: './listar.component.html',
+  styleUrls: ['./listar.component.css']
 })
-export class TransactionTemplateComponent implements OnInit {
+export class ListarTransaccion implements OnInit {
 
   TranferenciaLista:TranferenciaListar[];
   constructor(private service:TransferenciasServiceService, private router:Router) { }
@@ -20,4 +20,5 @@ export class TransactionTemplateComponent implements OnInit {
       this.TranferenciaLista=data;
     })
   }
+
 }
